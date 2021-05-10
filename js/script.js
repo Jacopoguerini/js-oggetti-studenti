@@ -52,11 +52,16 @@ for (var i = 0; i < studentList.length; i++) {
 
 // Dare la possibilità all'utente, attraverso 3 prompt(), di aggiungere un nuovo oggetto studente inserendo nell'ordine: nome, cognome e età.
 
+var name = prompt("Inserisci qui il tuo nome:");
+var surname = prompt("Inserisci qui ili tuo cognome:");
+var age = prompt("Inserisci qui la tua età:");
+
 var newStudent = {
-    name: prompt("Inserisci qui il tuo nome:"),
-    surname: prompt("Inserisci qui ili tuo cognome:"),
-    age: prompt("Inserisci qui la tua età:")
+    name: name,
+    surname: surname,
+    age: age
 }
+
 console.log(newStudent);
 
 studentList.push(newStudent);
